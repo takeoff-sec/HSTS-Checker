@@ -27,7 +27,7 @@ def check_sts():
 	else:
 		None
 	
-	#If sts header found, check for includeSubdomains flag
+	#If sts header found, check for includeSubDomains flag
 	if hsts_present == True:
 		if 'includeSubDomains' in response.headers['strict-transport-security']:
 			print("Include SubDomains flag present")
